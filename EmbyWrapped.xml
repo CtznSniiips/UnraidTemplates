@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>EmbyWrapped</Name>
+  <Repository>ghcr.io/ctznsniiips/emby-wrapped:latest</Repository>
+  <Registry>https://github.com/CtznSniiips/emby-wrapped</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>A beautiful, Spotify Wrapped-style year-in-review experience for your Emby media server. This fork includes enhanced music statistics, improved image handling, and more detailed viewing patterns.</Overview>
+  <Category>Tools:Utilities<Category/>
+  <WebUI>http://[IP]:[PORT:3003]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/CtznSniiips/emby-wrapped/blob/main/src/lib/assets/embywrapped-logo.png?raw=true</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1775229109</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>Emby Playback Reporting Plugin (Required unless using Tracearr)&#13;
+Tracearr (recommended but optional - https://github.com/connorgallopo/tracearr)</Requires>
+  <Config Name="Port" Target="3003" Default="3003" Mode="tcp" Description="" Type="Port" Display="always-hide" Required="true" Mask="false">3003</Config>
+  <Config Name="EMBY_URL" Target="EMBY_URL" Default="" Mode="" Description="Required" Type="Variable" Display="always-hide" Required="true" Mask="false"></Config>
+  <Config Name="EMBY_API_KEY" Target="EMBY_API_KEY" Default="" Mode="" Description="Required" Type="Variable" Display="always-hide" Required="true" Mask="false"></Config>
+  <Config Name="Music" Target="/app/static/music" Default="" Mode="ro" Description="Optional: custom background music" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/embywrapped/music</Config>
+  <Config Name="TMDB_API_KEY" Target="TMDB_API_KEY" Default="" Mode="" Description="Optional: for enhanced poster images" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="PUBLIC_URL" Target="PUBLIC_URL" Default="" Mode="" Description="Optional: for share links" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="SEERR_URL" Target="SEERR_URL" Default="" Mode="" Description="Optional: Jellyseerr/Seerr URL for request stats" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="SEERR_API_KEY" Target="SEERR_API_KEY" Default="" Mode="" Description="Optional: Jellyseerr/Seerr API key" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="TRACEARR_URL" Target="TRACEARR_URL" Default="" Mode="" Description="Optional: Tracearr URL (uses Tracearr history instead of Playback Reporting)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="TRACEARR_API_KEY" Target="TRACEARR_API_KEY" Default="" Mode="" Description="Optional: Tracearr public API key (format: trr_pub_*)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="TRACEARR_USERNAME_ALIASES" Target="TRACEARR_USERNAME_ALIASES" Default="" Mode="" Description="Optional case-insensitive username mapping for Tracearr-to-Emby matching after renames. Format: oldname1:newname1,oldname2:newname2" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <TailscaleStateDir/>
+  <Screenshot>https://github.com/CtznSniiips/emby-wrapped/blob/main/src/lib/assets/screenshots/login.png?raw=true</Screenshot>
+  <Screenshot>https://github.com/CtznSniiips/emby-wrapped/blob/main/src/lib/assets/screenshots/community-top-shows.png?raw=true</Screenshot>
+  <Screenshot>https://github.com/CtznSniiips/emby-wrapped/blob/main/src/lib/assets/screenshots/user-watch-time.png?raw=true</Screenshot>
+</Container>
