@@ -10,7 +10,7 @@
   <Support>https://forums.unraid.net/topic/198106-support-embywrapped/</Support>
   <Project/>
   <Overview>A beautiful, Spotify Wrapped-style year-in-review experience for your Emby media server. This fork includes enhanced music statistics, improved image handling, and more detailed viewing patterns.</Overview>
-  <Category>Tools:Utilities<Category/>
+  <Category>Tools:Utilities</Category>
   <WebUI>http://[IP]:[PORT:3003]/</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/CtznSniiips/emby-wrapped/blob/main/src/lib/assets/embywrapped-logo.png?raw=true</Icon>
